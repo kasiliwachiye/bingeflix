@@ -1,5 +1,4 @@
 //all of them are elements
-
-export {Header} from './Header';
-export {Footer} from './Footer';
+export { Header } from "./Header";
+export { Footer } from "./Footer";
 export {Card} from './Card';
