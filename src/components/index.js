@@ -1,4 +1,6 @@
 //all of them are elements
+import { NavLink } from 'react-router-dom';
 export { Header } from "./Header";
 export { Footer } from "./Footer";
 export {Card} from './Card';
+
