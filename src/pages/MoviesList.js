@@ -1,11 +1,18 @@
+import {Card} from "../components/Card";
+
 
 export const MoviesList = () => {
   return (
    <main>
-   <div className="text-2xl bg-emerald-200 p-10 border-2-blue-700 rounded-lg m-5">
-     MoviesList
-   </div>
+   {/* padding added below */}
+   <section className="max-w-7xl mx-auto py-7">
+   {/* viewer screen response added */}
+   <div className="flex justify-start flex-wrap">
    
+   <Card/>
+
+   </div>
+   </section>
    </main>
   )
 }
