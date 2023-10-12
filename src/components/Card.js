@@ -1,14 +1,17 @@
 import { Link } from "react-router-dom";
+import Backup  from "../assets/images/nathan-dumlao-a3ra9eXUjvo-unsplash.jpg";
 //create a base setup
 // we should be careful with the components arrangement
 
 // export const Card = ({movie}) => {
 //     const {id, original_title, overview, poster_path} = movie;
 //     const image = poster_path ? `https://image.tmdb.org/t/p/w500/${poster_path}` : Backup ;
+
   
 export const Card = ({movie}) => {
   const {id, original_title, overview, poster_path} = movie;
-  const image = `https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg${poster_path}`;
+  //in a scenario whereby the image can not be found, we access the backup
+  const image = false? `https://image.tmdb.org/t/p/w500/${poster_path}`: Backup;
   return (
 
 
