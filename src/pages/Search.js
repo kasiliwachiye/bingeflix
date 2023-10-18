@@ -4,6 +4,7 @@ import { Card } from "../components";
 
 export const Search = ({apiPath}) => {
   const [searchParams] = useSearchParams();
+  // keyword being referred will be q
   const queryTerm = searchParams.get("q");
   const {data : movies} = useFetch(apiPath, queryTerm);
 

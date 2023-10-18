@@ -9,7 +9,7 @@ export const useFetch = (apiPath, queryTerm="") => {
 useEffect (() => { async function fetchMovies(){ 
     const response = await fetch(url);
     const json= await response.json(); 
-    setData(json.results);
+    setData(json.results || []);
   }
   fetchMovies();
   },[url])
