@@ -8,7 +8,7 @@ import React from 'react'
 
 export const AllRoutes = () => {
   return (
-    <div className="dark:bg-slate-800">
+    <div className="dark:bg-gray-800">
     <Routes>
         <Route path= "" element={<MovieList apiPath="movie/now_playing"/>} />
         <Route path= "movie/:id" element= {<MovieDetail/>} />
