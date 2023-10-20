@@ -1,5 +1,8 @@
-import PageNotFoundImage from "../assets/images/pagenotfound.png"
+import PageNotFoundImage from "../assets/images/pagenotfound.png";
 import { Link } from "react-router-dom";
+import { Button } from "../components";
+
+
 export const PageNotFound = () => {
   return (
    <main>
@@ -12,8 +15,7 @@ export const PageNotFound = () => {
     </div>
     <div className="flex justify-center my-4">
   <Link to="/"></Link>
-  {/* Adding gradient color */}
-  <button className="w-64 text-xl bg-gradient-to-r from-cyan-500 to-blue-500">Back To Cinemate</button>
+    <Button>Back to Cinemate</Button>
     </div>
    </section>
    </main>
