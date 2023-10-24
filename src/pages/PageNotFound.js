@@ -1,9 +1,16 @@
 import PageNotFoundImage from "../assets/images/pagenotfound.png";
 import { Link } from "react-router-dom";
 import { Button } from "../components";
+import { useEffect } from "react";
 
 
 export const PageNotFound = () => {
+
+  useEffect(() =>{
+    document.title = `Page Not Found/ Bingeflix`;
+  })
+
+  
   return (
    <main>
    <section className="flex flex-col justify-center px-2">

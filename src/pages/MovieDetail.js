@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Backup from "../assets/images/backup.png";
 
-export const MovieDetail = () => {
+export const MovieDetail = ({title}) => {
 const params = useParams();
 // all the data will be stored here
 const [movie, setMovie] = useState({});
@@ -18,6 +18,11 @@ async function fetchMovie(){
 }
 fetchMovie();
 }, [params.id]);
+
+
+useEffect(() =>{
+  document.title = `${movie.title}/ Bingeflix`;
+});
 
   return (
   <main>
