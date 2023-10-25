@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Backup from "../assets/images/backup.png";
+import { useTitle } from "../hooks/useTitle";
 
 export const MovieDetail = ({title}) => {
 const params = useParams();
 // all the data will be stored here
 const [movie, setMovie] = useState({});
+const pageTitle = useTitle(movie.title);
 const image = movie.poster_path ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}` : Backup ;
 
 useEffect(() => {
@@ -20,9 +22,6 @@ fetchMovie();
 }, [params.id]);
 
 
-useEffect(() =>{
-  document.title = `${movie.title}/ Bingeflix`;
-});
 
   return (
   <main>
