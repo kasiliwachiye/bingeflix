@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/—Pngtree—movie icon which is designed_3751863.png";
 // import { Header } from './Header';
 
 
@@ -44,7 +44,7 @@ const inActiveclassName = "text-base block py-2 pr-4 pl-3 text-gray-700 rounded 
     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <Link to="/" className="flex items-center">
               <img src={Logo} className="mr-2 h-8 sm:h-9" alt="Cinemate Logo" />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Cinemate</span>
+              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Bingeflix</span>
           </Link>
     {/* <Link to="/" classNameName="flex items-center">
           <img src= {Logo} classNameName="h-8 mr-3" alt="Cinemate Logo" />

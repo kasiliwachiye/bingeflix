@@ -7,7 +7,7 @@ export const MovieDetail = ({title}) => {
 const params = useParams();
 // all the data will be stored here
 const [movie, setMovie] = useState({});
-const pageTitle = useTitle(movie.title);
+const pageTitle = useTitle(movie.title); 
 const image = movie.poster_path ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}` : Backup ;
 
 useEffect(() => {
@@ -20,6 +20,27 @@ async function fetchMovie(){
 }
 fetchMovie();
 }, [params.id]);
+
+// export const MovieDetail = () => {
+//   const params = useParams();
+//   const [movie, setMovie] = useState({});
+  
+//   //eslint-disable-next-line
+//   const pageTitle = useTitle(movie.title);
+
+//   const image = movie.poster_path ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}` : Backup ;
+
+//   useEffect(() => {
+//     async function fetchMovie(){
+//       const response = await fetch(`https://api.themoviedb.org/3/movie/${params.id}?api_key=b80d59c33d6d57ed9c7e3713f91c188a`);
+//       const json = await response.json()
+//       setMovie(json);
+//       console.log(json);
+//     }
+//     fetchMovie();
+//   }, [params.id]);
+
+
 
 
 
