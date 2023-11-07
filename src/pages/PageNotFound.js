@@ -22,7 +22,7 @@ export const PageNotFound = () => {
     </div>
     <div className="flex justify-center my-4">
   <Link to="/"></Link>
-    <Button>Back to Cinemate</Button>
+    <Button>Back to Bingeflix</Button>
     </div>
    </section>
    </main>
